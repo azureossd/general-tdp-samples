@@ -8,8 +8,6 @@ print(){
     echo "output3" 1>&2
 }
 
-$log+=date
-$log+= echo "Generating output... $(print)"
-result=$(sudo apt install htop) 
-$log+= result
-echo $log
+date >> $log
+echo "Generating output... $(print)" >> $log
+sudo apt install htop >> $log
