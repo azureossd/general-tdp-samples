@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function print() {
+function print () {
     echo "output0"
     echo "output1"
 	echo "output2"
