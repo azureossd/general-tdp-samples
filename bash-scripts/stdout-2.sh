@@ -10,5 +10,5 @@ print(){
 
 date >> $log
 echo "Generating output... $(print)" >> $log
-
 sudo apt install htop >> $log
+echo $log
