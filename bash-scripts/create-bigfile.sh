@@ -3,7 +3,7 @@ counter=1
 while [ $counter -le 100 ]
 
 do
-    fallocate -l 50M test.img > /dev/null
+    fallocate -l 100M test.img > /dev/null
     echo "Ping ($counter)"
     counter=$(( $counter + 1 ))
 done
